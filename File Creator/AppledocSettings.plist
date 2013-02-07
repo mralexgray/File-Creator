@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>project-name</key>
+	<string>file-creator</string>
+	<key>project-company</key>
+	<string>Marquínez</string>
+	<key>company-id</key>
+	<string>org.marquinezferrandiz</string>
+	<key>output</key>
+	<string>./doc</string>
+	<key>ignore</key>
+	<string>*.m</string>
+</dict>
+</plist>
