@@ -4,6 +4,7 @@
 #define UDKaddShebang @"addShebang"
 #define UDKmakeExecutableScripts @"makeExecutableScripts"
 #define UDKaddSHextension @"addSHextension"
+#define UDKdefaultShell @"defaultShell"
 
 static NSString *defaultFilename=@"empty";
 
@@ -67,8 +68,9 @@ static NSString *defaultFilename=@"empty";
 -(void)createShellScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {
 	NSString *ext=nil;
+	NSString *shebang=[NSString stringWithFormat:@"#!%@",[[NSUserDefaults standardUserDefaults] stringForKey:UDKdefaultShell],nil];
 	if([[NSUserDefaults standardUserDefaults] boolForKey:UDKaddSHextension]) ext=@"sh";
-	[self createScriptFile:defaultFilename withExtension:ext pasteboard:pboard shebang:@"#!/bin/bash"];
+	[self createScriptFile:defaultFilename withExtension:ext pasteboard:pboard shebang:shebang];
 }
 
 @end

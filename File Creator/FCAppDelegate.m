@@ -1,12 +1,16 @@
 #import "FCAppDelegate.h"
 
+#define UDKdefaultShell @"defaultShell"
+
 @implementation FCAppDelegate
 
-@synthesize statusItem,statusMenu,fileCreator,preferencesWindow;
+@synthesize statusItem,statusMenu,fileCreator,preferencesWindow,shellSelector;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	// Insert code here to initialize your application
+	[shellSelector selectItemWithTitle:[[NSUserDefaults standardUserDefaults] stringForKey:UDKdefaultShell]];
+
 	self.fileCreator=[FCFileCreator new];
 	[NSApp setServicesProvider:self.fileCreator];
 	//NSStatusBar *stat=[NSStatusBar sys]
@@ -36,6 +40,10 @@
 - (IBAction)openHomepage:(id)sender
 {
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://jaimemf.bitbucket.org"]];
+}
+
+- (IBAction)shellSelectorSelected:(id)sender {
+	[[NSUserDefaults standardUserDefaults] setObject:[shellSelector titleOfSelectedItem] forKey:UDKdefaultShell];
 }
 
 @end

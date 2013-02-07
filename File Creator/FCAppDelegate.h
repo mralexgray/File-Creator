@@ -15,6 +15,8 @@
 @property (assign)IBOutlet NSMenu *statusMenu;
 /// The objects that takes care of the services calls and the creation of files
 @property FCFileCreator *fileCreator;
+/// Reference to the shell selector popup.
+@property (weak) IBOutlet NSPopUpButton *shellSelector;
 
 /** Show the preferences
  * @bug When the window has already been closed once, the call fails.
@@ -26,5 +28,6 @@
  * @param sender The sender of the message.
  */
 -(IBAction)openHomepage:(id)sender;
+-(IBAction)shellSelectorSelected:(id)sender;
 
 @end

@@ -4,6 +4,7 @@
 #define UDKaddShebang @"addShebang"
 #define UDKmakeExecutableScripts @"makeExecutableScripts"
 #define UDKaddSHextension @"addSHextension"
+#define UDKdefaultShell @"defaultShell"
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
 						registerDefaults:@{UDKoverwriteFiles:@NO,
 										   UDKaddShebang:@NO,
 										   UDKmakeExecutableScripts:@NO,
-										   UDKaddSHextension:@YES}];
+										   UDKaddSHextension:@YES,
+										   UDKdefaultShell:@"/bin/bash"}];
 	return NSApplicationMain(argc, (const char **)argv);
 }
