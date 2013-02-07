@@ -3,6 +3,7 @@
 #define UDKoverwriteFiles @"overwriteFiles"
 #define UDKaddShebang @"addShebang"
 #define UDKmakeExecutableScripts @"makeExecutableScripts"
+#define UDKaddSHextension @"addSHextension"
 
 static NSString *defaultFilename=@"empty";
 
@@ -14,7 +15,9 @@ static NSString *defaultFilename=@"empty";
 }
 -(void)createFile:(NSString *)filename withExtension:(NSString *)extension atPath:(NSString *)path contents:(NSData *)contents attributes:(NSDictionary *)attributes
 {
-	[self createFile:[filename stringByAppendingPathExtension:extension] atPath:path contents:contents attributes:attributes];
+	NSString *fullFilename=filename;
+	if ((extension!=nil) && ([extension isEqualToString:@""]==NO)) fullFilename=[filename stringByAppendingPathExtension:extension];
+	[self createFile:fullFilename atPath:path contents:contents attributes:attributes];
 }
 
 -(NSString *)directoryFromPasteboard:(NSPasteboard *)pboard
@@ -63,7 +66,9 @@ static NSString *defaultFilename=@"empty";
 }
 -(void)createShellScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {
-	[self createScriptFile:defaultFilename withExtension:@"sh" pasteboard:pboard shebang:@"#!/bin/bash"];
+	NSString *ext=nil;
+	if([[NSUserDefaults standardUserDefaults] boolForKey:UDKaddSHextension]) ext=@"sh";
+	[self createScriptFile:defaultFilename withExtension:ext pasteboard:pboard shebang:@"#!/bin/bash"];
 }
 
 @end

@@ -17,7 +17,7 @@
 /**
  * Create a file with the desired extension
  * @param filename The file name (without extension).
- * @param extension the file extension, without point, e.g: "txt".
+ * @param extension the file extension, without point, e.g: "txt". If you dont't want an extension use @"" or nil.
  * @param path The directory where the file will be created.
  * @param contents The file contents.
  * @param attributes The file attributes.

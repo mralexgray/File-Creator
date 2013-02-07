@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1070</int>
 		<string key="IBDocument.SystemVersion">11G63</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2844</string>
+		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
 		<string key="IBDocument.AppKitVersion">1138.51</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">2844</string>
+			<string key="NS.object.0">3084</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSBox</string>
@@ -1307,12 +1307,9 @@
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<object class="NSView" key="NSWindowView" id="439893737">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<string key="NSFrameSize">{480, 360}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
-					<reference key="NSNextKeyView"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
@@ -1404,7 +1401,7 @@
 															<string key="NSReuseIdentifierKey">_NS:9</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSButtonCell" key="NSCell" id="577505079">
-																<int key="NSCellFlags">-2080374784</int>
+																<int key="NSCellFlags">67108864</int>
 																<int key="NSCellFlags2">268435456</int>
 																<string key="NSContents">Add shebangs</string>
 																<object class="NSFont" key="NSSupport" id="1048313368">
@@ -1439,7 +1436,7 @@
 															<string key="NSReuseIdentifierKey">_NS:9</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSButtonCell" key="NSCell" id="325723595">
-																<int key="NSCellFlags">-2080374784</int>
+																<int key="NSCellFlags">67108864</int>
 																<int key="NSCellFlags2">268435456</int>
 																<string key="NSContents">Mark as executables</string>
 																<reference key="NSSupport" ref="1048313368"/>
@@ -1587,11 +1584,11 @@
 															<string key="NSFrame">{{16, 40}, {243, 18}}</string>
 															<reference key="NSSuperview" ref="121273868"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="394302475"/>
+															<reference key="NSNextKeyView" ref="438560199"/>
 															<string key="NSReuseIdentifierKey">_NS:9</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSButtonCell" key="NSCell" id="295458576">
-																<int key="NSCellFlags">-2080374784</int>
+																<int key="NSCellFlags">67108864</int>
 																<int key="NSCellFlags2">268435456</int>
 																<string key="NSContents">Add ".sh" extension to shell scripts</string>
 																<reference key="NSSupport" ref="1048313368"/>
@@ -1605,29 +1602,6 @@
 																<string key="NSKeyEquivalent"/>
 																<int key="NSPeriodicDelay">200</int>
 																<int key="NSPeriodicInterval">25</int>
-															</object>
-														</object>
-														<object class="NSTextField" id="394302475">
-															<reference key="NSNextResponder" ref="121273868"/>
-															<int key="NSvFlags">268</int>
-															<string key="NSFrame">{{262, 41}, {139, 17}}</string>
-															<reference key="NSSuperview" ref="121273868"/>
-															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="438560199"/>
-															<string key="NSReuseIdentifierKey">_NS:1535</string>
-															<bool key="NSEnabled">YES</bool>
-															<object class="NSTextFieldCell" key="NSCell" id="868307602">
-																<int key="NSCellFlags">68157504</int>
-																<int key="NSCellFlags2">272630784</int>
-																<string key="NSContents">&lt;= Not implemented</string>
-																<reference key="NSSupport" ref="1048313368"/>
-																<string key="NSCellIdentifier">_NS:1535</string>
-																<reference key="NSControlView" ref="394302475"/>
-																<reference key="NSBackgroundColor" ref="996501504"/>
-																<object class="NSColor" key="NSTextColor">
-																	<int key="NSColorSpace">1</int>
-																	<bytes key="NSRGB">MSAwIDAuMDQ3MTE4NzQyOTcAA</bytes>
-																</object>
 															</object>
 														</object>
 														<object class="NSTextField" id="42538778">
@@ -1706,7 +1680,7 @@
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="686948839">
-												<int key="NSCellFlags">-2080374784</int>
+												<int key="NSCellFlags">67108864</int>
 												<int key="NSCellFlags2">268435456</int>
 												<string key="NSContents">Overwrite files</string>
 												<reference key="NSSupport" ref="1048313368"/>
@@ -1732,7 +1706,7 @@
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="555840969">
-												<int key="NSCellFlags">-2080374784</int>
+												<int key="NSCellFlags">67108864</int>
 												<int key="NSCellFlags2">268435456</int>
 												<string key="NSContents">Add ".txt" extension to the "Create File" service</string>
 												<reference key="NSSupport" ref="1048313368"/>
@@ -2682,6 +2656,22 @@
 						</object>
 					</object>
 					<int key="connectionID">672</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.addSHextension</string>
+						<reference key="source" ref="618346408"/>
+						<reference key="destination" ref="815878675"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="618346408"/>
+							<reference key="NSDestination" ref="815878675"/>
+							<string key="NSLabel">value: values.addSHextension</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.addSHextension</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">819</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3727,7 +3717,6 @@
 							<reference ref="349310947"/>
 							<reference ref="438560199"/>
 							<reference ref="618346408"/>
-							<reference ref="394302475"/>
 							<reference ref="42538778"/>
 						</array>
 						<reference key="parent" ref="616048138"/>
@@ -3912,19 +3901,6 @@
 						<int key="objectID">791</int>
 						<reference key="object" ref="295458576"/>
 						<reference key="parent" ref="618346408"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">808</int>
-						<reference key="object" ref="394302475"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="868307602"/>
-						</array>
-						<reference key="parent" ref="95431305"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">809</int>
-						<reference key="object" ref="868307602"/>
-						<reference key="parent" ref="394302475"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">810</int>
@@ -4165,8 +4141,6 @@
 				<string key="79.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="790.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="791.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="808.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="809.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="810.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="811.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4184,7 +4158,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">817</int>
+			<int key="maxID">819</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
