@@ -13,13 +13,10 @@
 
 	self.fileCreator=[FCFileCreator new];
 	[NSApp setServicesProvider:self.fileCreator];
-	//NSStatusBar *stat=[NSStatusBar sys]
 	NSStatusBar *bar = [NSStatusBar systemStatusBar];
 
 	statusItem= [bar statusItemWithLength:NSVariableStatusItemLength];
-	//[theItem retain];
 
-    //[theItem setTitle: @"File Creator"];
 	NSImage *icon=[NSApp applicationIconImage];
 	[icon setSize:NSMakeSize(16,16)];
 	[statusItem setImage:icon];

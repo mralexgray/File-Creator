@@ -51,7 +51,7 @@ static NSString *defaultFilename=@"empty";
 		fileContents=[shebang dataUsingEncoding:NSUTF8StringEncoding];
 	}
 	if ([[NSUserDefaults standardUserDefaults] boolForKey:UDKmakeExecutableScripts]) {
-		attr[NSFilePosixPermissions]=@(0755);
+		[attr setValue:[NSNumber numberWithInt:0755] forKey:NSFilePosixPermissions];
 	}
 	[self createFile:filename withExtension:extension pasteboard:pboard contents:fileContents attributes:attr];
 }
