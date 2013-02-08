@@ -50,11 +50,11 @@
 						<string key="NSTitle">About File Creator</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="344763944">
+						<object class="NSCustomResource" key="NSOnImage" id="524877517">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="130074788">
+						<object class="NSCustomResource" key="NSMixedImage" id="1009874461">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
@@ -65,16 +65,16 @@
 						<string key="NSKeyEquiv">,</string>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="344763944"/>
-						<reference key="NSMixedImage" ref="130074788"/>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
 					</object>
 					<object class="NSMenuItem" id="933085138">
 						<reference key="NSMenu" ref="175239414"/>
 						<string key="NSTitle">Homepage</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="344763944"/>
-						<reference key="NSMixedImage" ref="130074788"/>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
 					</object>
 					<object class="NSMenuItem" id="965940002">
 						<reference key="NSMenu" ref="175239414"/>
@@ -83,17 +83,17 @@
 						<string key="NSTitle"/>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="344763944"/>
-						<reference key="NSMixedImage" ref="130074788"/>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
 					</object>
 					<object class="NSMenuItem" id="621971701">
 						<reference key="NSMenu" ref="175239414"/>
-						<string key="NSTitle">Quit</string>
+						<string key="NSTitle">Quit File Creator</string>
 						<string key="NSKeyEquiv">q</string>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="344763944"/>
-						<reference key="NSMixedImage" ref="130074788"/>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
 					</object>
 				</array>
 			</object>
@@ -215,8 +215,8 @@
 																	<int key="NSKeyEquivModMask">1048576</int>
 																	<int key="NSMnemonicLoc">2147483647</int>
 																	<int key="NSState">1</int>
-																	<reference key="NSOnImage" ref="344763944"/>
-																	<reference key="NSMixedImage" ref="130074788"/>
+																	<reference key="NSOnImage" ref="524877517"/>
+																	<reference key="NSMixedImage" ref="1009874461"/>
 																	<string key="NSAction">_popUpItemAction:</string>
 																	<reference key="NSTarget" ref="37495141"/>
 																</object>
@@ -231,8 +231,8 @@
 																			<string key="NSKeyEquiv"/>
 																			<int key="NSKeyEquivModMask">1048576</int>
 																			<int key="NSMnemonicLoc">2147483647</int>
-																			<reference key="NSOnImage" ref="344763944"/>
-																			<reference key="NSMixedImage" ref="130074788"/>
+																			<reference key="NSOnImage" ref="524877517"/>
+																			<reference key="NSMixedImage" ref="1009874461"/>
 																			<string key="NSAction">_popUpItemAction:</string>
 																			<reference key="NSTarget" ref="37495141"/>
 																		</object>
@@ -242,8 +242,8 @@
 																			<string key="NSKeyEquiv"/>
 																			<int key="NSKeyEquivModMask">1048576</int>
 																			<int key="NSMnemonicLoc">2147483647</int>
-																			<reference key="NSOnImage" ref="344763944"/>
-																			<reference key="NSMixedImage" ref="130074788"/>
+																			<reference key="NSOnImage" ref="524877517"/>
+																			<reference key="NSMixedImage" ref="1009874461"/>
 																			<string key="NSAction">_popUpItemAction:</string>
 																			<reference key="NSTarget" ref="37495141"/>
 																		</object>
@@ -252,8 +252,8 @@
 																			<string key="NSTitle">/bin/csh</string>
 																			<string key="NSKeyEquiv"/>
 																			<int key="NSMnemonicLoc">2147483647</int>
-																			<reference key="NSOnImage" ref="344763944"/>
-																			<reference key="NSMixedImage" ref="130074788"/>
+																			<reference key="NSOnImage" ref="524877517"/>
+																			<reference key="NSMixedImage" ref="1009874461"/>
 																			<string key="NSAction">_popUpItemAction:</string>
 																			<reference key="NSTarget" ref="37495141"/>
 																		</object>
@@ -262,8 +262,8 @@
 																			<string key="NSTitle">/bin/tcsh</string>
 																			<string key="NSKeyEquiv"/>
 																			<int key="NSMnemonicLoc">2147483647</int>
-																			<reference key="NSOnImage" ref="344763944"/>
-																			<reference key="NSMixedImage" ref="130074788"/>
+																			<reference key="NSOnImage" ref="524877517"/>
+																			<reference key="NSMixedImage" ref="1009874461"/>
 																			<string key="NSAction">_popUpItemAction:</string>
 																			<reference key="NSTarget" ref="37495141"/>
 																		</object>
@@ -540,6 +540,7 @@
 							<string key="NSFrame">{{273, 19}, {187, 19}}</string>
 							<reference key="NSSuperview" ref="305133149"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="373712834">
