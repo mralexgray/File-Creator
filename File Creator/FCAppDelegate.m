@@ -26,7 +26,6 @@
 
 -(IBAction)showPreferences:(id)sender
 {
-	// TODO: Fix when the window has already benn closed once
 	if(![preferencesWindow isVisible] )
         [preferencesWindow makeKeyAndOrderFront:nil];
 }

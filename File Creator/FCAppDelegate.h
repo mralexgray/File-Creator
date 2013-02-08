@@ -19,7 +19,6 @@
 @property (weak) IBOutlet NSPopUpButton *shellSelector;
 
 /** Show the preferences
- * @bug When the window has already been closed once, the call fails.
  * @param sender The sender of the message.
  */
 -(IBAction)showPreferences:(id)sender;
