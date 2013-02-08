@@ -65,6 +65,14 @@ static NSString *defaultFilename=@"empty";
 {
 	[self createScriptFile:defaultFilename withExtension:@"py" pasteboard:pboard shebang:@"#!/usr/bin/env python"];
 }
+-(void)createRubyScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString *__autoreleasing *)error
+{
+	[self createScriptFile:defaultFilename withExtension:@"rb" pasteboard:pboard shebang:@"#!/usr/bin/env ruby"];
+}
+-(void)createPerlScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString *__autoreleasing *)error
+{
+	[self createScriptFile:defaultFilename withExtension:@"pl" pasteboard:pboard shebang:@"#!/usr/bin/env perl"];
+}
 -(void)createShellScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {
 	NSString *ext=nil;

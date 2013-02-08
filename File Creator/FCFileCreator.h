@@ -66,17 +66,10 @@
  * @param error Error
  */
 -(void)createFile:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
-/** Create a script with "py" extension
- * @param pboard The pasteboard with the selection.
- * @param data Some data
- * @param error Error
- */
+
 -(void)createPythonScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
-/** Create a script with "sh" extension
- * @param pboard The pasteboard with the selection.
- * @param data Some data
- * @param error Error
- */
+-(void)createRubyScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
+-(void)createPerlScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
 -(void)createShellScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
 
 @end
