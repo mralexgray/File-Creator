@@ -29,10 +29,6 @@
 	if(![preferencesWindow isVisible] )
         [preferencesWindow makeKeyAndOrderFront:nil];
 }
--(IBAction)quitApp:(id)sender
-{
-	[NSApp terminate:nil];
-}
 - (IBAction)openHomepage:(id)sender
 {
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://jaimemf.bitbucket.org"]];

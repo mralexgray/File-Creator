@@ -22,7 +22,6 @@
  * @param sender The sender of the message.
  */
 -(IBAction)showPreferences:(id)sender;
--(IBAction)quitApp:(id)sender;
 /** Open the homepage 
  * @param sender The sender of the message.
  */
