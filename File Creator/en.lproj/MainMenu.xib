@@ -59,19 +59,29 @@
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
+					<object class="NSMenuItem" id="933085138">
+						<reference key="NSMenu" ref="175239414"/>
+						<string key="NSTitle">Homepage</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
+					</object>
+					<object class="NSMenuItem" id="903717133">
+						<reference key="NSMenu" ref="175239414"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsSeparator">YES</bool>
+						<string key="NSTitle"/>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="524877517"/>
+						<reference key="NSMixedImage" ref="1009874461"/>
+					</object>
 					<object class="NSMenuItem" id="164896986">
 						<reference key="NSMenu" ref="175239414"/>
 						<string key="NSTitle">Preferences…</string>
 						<string key="NSKeyEquiv">,</string>
 						<int key="NSKeyEquivModMask">1048576</int>
-						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="524877517"/>
-						<reference key="NSMixedImage" ref="1009874461"/>
-					</object>
-					<object class="NSMenuItem" id="933085138">
-						<reference key="NSMenu" ref="175239414"/>
-						<string key="NSTitle">Homepage</string>
-						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="524877517"/>
 						<reference key="NSMixedImage" ref="1009874461"/>
@@ -540,7 +550,6 @@
 							<string key="NSFrame">{{273, 19}, {187, 19}}</string>
 							<reference key="NSSuperview" ref="305133149"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="373712834">
@@ -940,6 +949,7 @@
 							<reference ref="59917359"/>
 							<reference ref="164896986"/>
 							<reference ref="933085138"/>
+							<reference ref="903717133"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1033,6 +1043,11 @@
 						<reference key="object" ref="1053877061"/>
 						<reference key="parent" ref="515499786"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">828</int>
+						<reference key="object" ref="903717133"/>
+						<reference key="parent" ref="175239414"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1081,12 +1096,13 @@
 				<string key="815.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="816.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="817.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="828.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">827</int>
+			<int key="maxID">828</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
