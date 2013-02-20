@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		DB37953E16C2809B00DCFE6D /* FCFileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37953D16C2809B00DCFE6D /* FCFileCreator.m */; };
 		DB98B9AC16C1C7B100D7B3F6 /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB98B9AB16C1C7B100D7B3F6 /* AppledocSettings.plist */; };
+		DBA3E2FE16C5BB6C005F0B12 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DBA3E2FD16C5BB6C005F0B12 /* Icon.icns */; };
 		DBABBF5B16C05A5500BFE2D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBABBF5A16C05A5500BFE2D7 /* Cocoa.framework */; };
 		DBABBF6516C05A5500BFE2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBABBF6316C05A5500BFE2D7 /* InfoPlist.strings */; };
 		DBABBF6716C05A5500BFE2D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBABBF6616C05A5500BFE2D7 /* main.m */; };
@@ -36,6 +37,7 @@
 		DB37953D16C2809B00DCFE6D /* FCFileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFileCreator.m; sourceTree = "<group>"; };
 		DB6BBC2416C3E72000B3E178 /* documentation.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = documentation.sh; sourceTree = "<group>"; };
 		DB98B9AB16C1C7B100D7B3F6 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		DBA3E2FD16C5BB6C005F0B12 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		DBABBF5616C05A5500BFE2D7 /* File Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBABBF5A16C05A5500BFE2D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBABBF5D16C05A5500BFE2D7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 				DB37953C16C2809B00DCFE6D /* FCFileCreator.h */,
 				DB37953D16C2809B00DCFE6D /* FCFileCreator.m */,
 				DBABBF6F16C05A5600BFE2D7 /* MainMenu.xib */,
+				DBA3E2FD16C5BB6C005F0B12 /* Icon.icns */,
 				DBABBF6116C05A5500BFE2D7 /* Supporting Files */,
 			);
 			path = "File Creator";
@@ -191,6 +194,7 @@
 				DBABBF6B16C05A5500BFE2D7 /* Credits.rtf in Resources */,
 				DBABBF7116C05A5600BFE2D7 /* MainMenu.xib in Resources */,
 				DB98B9AC16C1C7B100D7B3F6 /* AppledocSettings.plist in Resources */,
+				DBA3E2FE16C5BB6C005F0B12 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
