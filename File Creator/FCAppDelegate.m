@@ -31,6 +31,10 @@
 }
 - (IBAction)openHomepage:(id)sender
 {
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://jaimemf.bitbucket.org/File-Creator/"]];
+}
+- (IBAction)openAuthorsPage:(id)sender
+{
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://jaimemf.bitbucket.org"]];
 }
 

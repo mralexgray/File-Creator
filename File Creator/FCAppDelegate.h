@@ -26,6 +26,7 @@
  * @param sender The sender of the message.
  */
 -(IBAction)openHomepage:(id)sender;
+-(IBAction)openAuthorsPage:(id)sender;
 -(IBAction)shellSelectorSelected:(id)sender;
 
 @end

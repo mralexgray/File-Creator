@@ -566,7 +566,6 @@
 							<string key="NSFrame">{{273, 19}, {187, 19}}</string>
 							<reference key="NSSuperview" ref="305133149"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="373712834">
@@ -677,14 +676,6 @@
 					<int key="connectionID">576</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">openHomepage:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="949334828"/>
-					</object>
-					<int key="connectionID">704</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">statusMenu</string>
 						<reference key="source" ref="976324537"/>
@@ -723,6 +714,14 @@
 						<reference key="destination" ref="349310947"/>
 					</object>
 					<int key="connectionID">826</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">openAuthorsPage:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="949334828"/>
+					</object>
+					<int key="connectionID">868</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1169,7 +1168,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">866</int>
+			<int key="maxID">868</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1177,11 +1176,16 @@
 					<string key="className">FCAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="openAuthorsPage:">id</string>
 						<string key="openHomepage:">id</string>
 						<string key="shellSelectorSelected:">id</string>
 						<string key="showPreferences:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="openAuthorsPage:">
+							<string key="name">openAuthorsPage:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="openHomepage:">
 							<string key="name">openHomepage:</string>
 							<string key="candidateClassName">id</string>
