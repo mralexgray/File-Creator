@@ -139,6 +139,26 @@
 				<string>NSFilenamesPboardType</string>
 			</array>
 		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>File Creator/Create HTML File</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>createHTMLfile</string>
+			<key>NSPortName</key>
+			<string>File Creator</string>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSTextContent</key>
+				<string>FilePath</string>
+			</dict>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>

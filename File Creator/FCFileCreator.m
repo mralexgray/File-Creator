@@ -61,6 +61,23 @@ static NSString *defaultFilename=@"empty";
 {
 	[self createFile:defaultFilename withExtension:@"txt" pasteboard:pboard];
 }
+-(void)createHTMLfile:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
+{
+	NSString *htmlContent=
+@"<!DOCTYPE html>\n\
+<html>\n\
+	<head>\n\
+		<meta charset=\"utf-8\">\n\
+		<title>Empty</title>\n\
+	</head>\n\
+	<body>\n\
+		Write here\n\
+	</body>\n\
+</html>";
+	NSData *htmlData=[htmlContent dataUsingEncoding:NSUTF8StringEncoding];
+	[self createFile:defaultFilename withExtension:@"html" pasteboard:pboard contents:htmlData attributes:nil];
+}
+
 -(void)createPythonScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {
 	[self createScriptFile:defaultFilename withExtension:@"py" pasteboard:pboard shebang:@"#!/usr/bin/env python"];

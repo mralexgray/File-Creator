@@ -66,6 +66,7 @@
  * @param error Error
  */
 -(void)createFile:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
+-(void)createHTMLfile:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
 
 -(void)createPythonScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
 -(void)createRubyScript:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error;
