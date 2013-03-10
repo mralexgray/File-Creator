@@ -7,6 +7,7 @@ It can currently create the following types of files:
 File type      | Extension
 -------------- | --------------
 Plain text     | `.txt`
+HTML           | `.html`
 Shell script   | `.sh` or none
 Python script  | `.py`
 Ruby script    | `.py`
