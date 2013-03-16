@@ -5,3 +5,11 @@
 #ifdef __OBJC__
 	#import <Cocoa/Cocoa.h>
 #endif
+
+//User defaults definitions
+#define UDKoverwriteFiles @"overwriteFiles"
+#define UDKaddShebang @"addShebang"
+#define UDKmakeExecutableScripts @"makeExecutableScripts"
+#define UDKaddSHextension @"addSHextension"
+#define UDKdefaultShell @"defaultShell"
+#define UDKinitializeHTML @"initializeHTML"

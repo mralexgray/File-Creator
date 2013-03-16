@@ -1,11 +1,5 @@
 #import "FCFileCreator.h"
 
-#define UDKoverwriteFiles @"overwriteFiles"
-#define UDKaddShebang @"addShebang"
-#define UDKmakeExecutableScripts @"makeExecutableScripts"
-#define UDKaddSHextension @"addSHextension"
-#define UDKdefaultShell @"defaultShell"
-
 static NSString *defaultFilename=@"empty";
 
 @implementation FCFileCreator
@@ -63,7 +57,9 @@ static NSString *defaultFilename=@"empty";
 }
 -(void)createHTMLfile:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {
-	NSString *htmlContent=
+	NSData *htmlData=nil;
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:UDKinitializeHTML]) {
+		NSString *htmlContent=
 @"<!DOCTYPE html>\n\
 <html>\n\
 	<head>\n\
@@ -74,7 +70,8 @@ static NSString *defaultFilename=@"empty";
 		Write here\n\
 	</body>\n\
 </html>";
-	NSData *htmlData=[htmlContent dataUsingEncoding:NSUTF8StringEncoding];
+		htmlData = [htmlContent dataUsingEncoding:NSUTF8StringEncoding];
+	}
 	[self createFile:defaultFilename withExtension:@"html" pasteboard:pboard contents:htmlData attributes:nil];
 }
 
