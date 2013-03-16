@@ -60,16 +60,16 @@ static NSString *defaultFilename=@"empty";
 	NSData *htmlData=nil;
 	if ([[NSUserDefaults standardUserDefaults] boolForKey:UDKinitializeHTML]) {
 		NSString *htmlContent=
-@"<!DOCTYPE html>\n\
-<html>\n\
-	<head>\n\
-		<meta charset=\"utf-8\">\n\
-		<title>Empty</title>\n\
-	</head>\n\
-	<body>\n\
-		Write here\n\
-	</body>\n\
-</html>";
+@"<!DOCTYPE html>\n"
+@"<html>\n"
+@"	<head>\n"
+@"		<meta charset=\"utf-8\">\n"
+@"		<title>Empty</title>\n"
+@"	</head>\n"
+@"	<body>\n"
+@"		Write here\n"
+@"	</body>\n"
+@"</html>\n";
 		htmlData = [htmlContent dataUsingEncoding:NSUTF8StringEncoding];
 	}
 	[self createFile:defaultFilename withExtension:@"html" pasteboard:pboard contents:htmlData attributes:nil];
